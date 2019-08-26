@@ -1291,7 +1291,7 @@ def to_zarr(
 
     See `Dataset.to_zarr` for full API docs.
     """
-    if isinstance(store, Path):
+    if isinstance(Path):
         store = str(store)
     if encoding is None:
         encoding = {}
